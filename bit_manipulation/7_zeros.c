@@ -18,12 +18,7 @@ int main(){
     if(!((1<<i)&num))
         count++;
     else{
-        if(SIZE/2<=count){
-           max=count;
-           break;
-        }else if(max<count){
-            max=count;
-        }
+        break;
     }
   }
   printf("bit representation : ");
