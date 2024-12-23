@@ -1,0 +1,35 @@
+1. Swap 2 numbers using bitwise operator (a=5, b=7) 
+	Output a= 7, b=5
+
+2.Reverse the numbers using bitwise operators (a= 00111011) and print the output in binary as well as decimal fromat
+	Output a = 11011100
+
+3.Do XOR operation between 2 numbers without using XOR operator (a = 1101 , b = 1001)
+
+4.Toggle a particular bit of a 16-bit number (a = 0011110001010111) , get the position of the bit that should be toggled from the user.
+
+5.Check if the number is a power of 2 using bitwise operations
+
+6.Count the number of set bits in any 16-bit number that the user gives
+
+7.Count the number of leading zeros present in a 16-bit number
+
+8.Check whether the binary representation of any integer in a palindrome or not
+
+9.Find whether the given number has odd parity(odd number of 1's) or even parity(even number of 1's)
+
+10.Check whether the given number is sparse or not(get an integer from the user convert to binary 
+and check for sparseness)
+
+11.Perform bitwise multiplication between 2 positive integers without using multiplication or division operation
+
+12.Find the next power of 2 of a given number using bitwise operations 
+
+13.Find the largest power of 2 less than or equal to a given number using bitwise operators
+
+14.Check if two numbers have opposite signs without using comparison operators a =-5,b=10
+
+15.Compute the absolute value of a number without using conditional statements. example a=-15, output a =15
+
+16.Count the number of trailing and leading zeros in a given number using bitwise manipulations.
+
