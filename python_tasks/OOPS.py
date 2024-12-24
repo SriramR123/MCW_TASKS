@@ -2,7 +2,6 @@ from abc import ABC, abstractmethod
 
 class VehicleType(ABC):
     #Abstract Parent class for vehicle type selection.
-
     def __init__(self):
         self.__vehicle_type = None
 
@@ -161,7 +160,7 @@ class PriceCalculator(Car):
 
     def __init__(self):
         super().__init__()
-        self.__price = 0
+        self.price = 0
 
     def calculate_price(self):
         details = self.get_car_details()
@@ -169,11 +168,11 @@ class PriceCalculator(Car):
         if self.get_vehicle_type() == "Car":
             if details["engine_type"] == "IC Engine":
                 if details["fuel_type"] == "Petrol":
-                    self.__price = int(details["capacity_or_battery"]) * 1000 + int(details["range_or_mileage"]) * 50
+                    self.price = int(details["capacity_or_battery"]) * 1000 + int(details["range_or_mileage"]) * 50
                 elif details["fuel_type"] == "Diesel":
-                    self.__price = int(details["capacity_or_battery"]) * 1200 + int(details["range_or_mileage"]) * 60
+                    self.price = int(details["capacity_or_battery"]) * 1200 + int(details["range_or_mileage"]) * 60
             elif details["engine_type"] == "EV Engine":
-                self.__price = int(details["capacity_or_battery"]) * 1500 + int(details["range_or_mileage"]) * 30
+                self.price = int(details["capacity_or_battery"]) * 1500 + int(details["range_or_mileage"]) * 30
 
     def print_estimate(self):
         details = self.get_car_details()
@@ -190,7 +189,7 @@ class PriceCalculator(Car):
             elif details["engine_type"] == "EV Engine":
                 print(f"Battery Capacity: {details['capacity_or_battery']} kWh")
                 print(f"Range: {details['range_or_mileage']} km")
-        print(f"Estimated Price: ₹{self.__price}")
+        print(f"Estimated Price: ₹{self.price}")
 
 # Main Program
 if __name__ == "__main__":
